@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""
+A program that prints numbers from 0 to 99.
+"""
 for i in range(100):
-    print("{:d}".format(i).rjust(2, "0"),
-          end="\n" if i == 99 else ", ")
+    print("{:02d}".format(i), end=", " if i < 99 else "\n")
